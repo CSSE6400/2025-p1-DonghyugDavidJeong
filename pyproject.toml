@@ -1,0 +1,17 @@
+[project]
+name = "csse6400"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Donghyug Jeong",email = "donghyug.jeong@uqconnect.edu.au"}
+]
+readme = "README.md"
+dependencies = [
+    "flask (>=3.1.0,<4.0.0)"
+]
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
