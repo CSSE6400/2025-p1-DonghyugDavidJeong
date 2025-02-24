@@ -11,7 +11,11 @@ The server in the project can be run using the command:
 poetry run flask --app todo run -p 6400
 ```
 This initialises the server with port 6400, and the port number can be changed.
-
+### Debug mode
+To run the app in debug mode (enables hot reloading), add the command `--debug`. The command may look like:
+```
+poetry run flask --app todo run -p 6400 --debug
+```
 Currently, if the server is run using the [command above](#how-to-run), the server has the following URL paths:
 http://localhost:6400/api/v1/health
 http://localhost:6400/api/v1/todos
