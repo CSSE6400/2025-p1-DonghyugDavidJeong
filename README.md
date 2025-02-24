@@ -5,9 +5,25 @@ Construction of a simple HTTP server in Python.
 
 Please see the [instructions](https://csse6400.uqcloud.net/practicals/week01.pdf) for more details.
 
-Update this README file with appropriate information about your project,
-including how to run it.
+## How to Run
+The server in the project can be run using the command:
+```
+poetry run flask --app todo run -p 6400
+```
+This initialises the server with port 6400, and the port number can be changed.
 
-There are [resources](https://www.makeareadme.com) available to help you write a good README file.
+Currently, if the server is run using the [command above](#how-to-run), the server has the following URL paths:
+http://localhost:6400/api/v1/health
+http://localhost:6400/api/v1/todos
+http://localhost:6400/api/v1/todos/1
 
-
+The URLs can accept the following methods:
+- http://localhost:6400/api/v1/health
+    - GET
+- http://localhost:6400/api/v1/todos
+    - GET
+    - POST
+- http://localhost:6400/api/v1/todos/1
+    - GET
+    - PUT
+    - DELETE
